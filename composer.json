@@ -1,0 +1,27 @@
+{
+    "name": "big-picture-medical/stubbable-dusk-make-command",
+    "description": "A stubbable Laravel Dusk make command.",
+    "license": "MIT",
+    "require": {
+        "php": "^7.2|^8.0",
+        "laravel/dusk": "^6.14"
+    },
+    "autoload": {
+        "psr-4": {
+            "BigPictureMedical\\Dusk\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BigPictureMedical\\Dusk\\DuskServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
+
